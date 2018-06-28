@@ -1,19 +1,27 @@
 {
-  "author": "Guy Halford-Thompson <guy@guy.ht> (http://guy.ht)",
-  "name": "notp",
-  "description": "Node One Time Password library, supports HOTP, TOTP and works with Google Authenticator",
-  "version": "2.0.3",
-  "homepage": "https://github.com/guyht/notp",
+  "author": "yuekec <yuekec@gmail.com>",
+  "name": "iotp",
+  "description": "Isomorphic One Time Password library for both node and browser, supports HOTP, TOTP and works with Google Authenticator",
+  "version": "3.0.0",
+  "homepage": "https://github.com/mountainmoon/iotp",
   "repository": {
     "type": "git",
-    "url": "git://github.com/guyht/notp.git"
+    "url": "git://github.com/mountainmoon/iotp.git"
   },
+  "keywords": [
+    "otp",
+    "hotp",
+    "totp",
+    "iotp",
+    "isomorphic"
+  ],
   "main": "index.js",
+  "browser": "browser.js",
   "scripts": {
     "test": "NODE_ENV=test mocha"
   },
   "engines": {
-    "node": "> v0.6.0"
+    "node": ">= v8.0.0"
   },
   "dependencies": {},
   "devDependencies": {
