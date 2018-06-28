@@ -1,5 +1,8 @@
 # Isomorphic One Time Password library
- Simple to use, fast, and with zero dependencies.  The Node Isomorphic Time Password library is fully compliant with [HOTP](http://tools.ietf.org/html/rfc4226) (counter based one time passwords) and [TOTP](http://tools.ietf.org/html/rfc6238) (time based one time passwords).  It can be used in conjunction with the [Google Authenticator](https://github.com/google/google-authenticator/) which has free apps for iOS, Android and BlackBerry.
+
+> Fork from [notp](https://github.com/guyht/notp)
+
+Simple to use, fast, and with zero dependencies.  The Isomorphic Time Password library both for node and browser is fully compliant with [HOTP](http://tools.ietf.org/html/rfc4226) (counter based one time passwords) and [TOTP](http://tools.ietf.org/html/rfc6238) (time based one time passwords).  It can be used in conjunction with the [Google Authenticator](https://github.com/google/google-authenticator/) which has free apps for iOS, Android and BlackBerry.
 
 # Installation
 
@@ -105,8 +108,7 @@ Returns a `Promise` will resolved to a time based one time password
 > The time step of the counter. This must be the same for every request and is used to calculate C.
 > Default - 30
 
-# Migrating from 2.x to 3.x
+## Changed from 2.x to 3.x
 
-## Changed
-
-Use async API style because browser crypto API is async.
+* Support for browser.
+* Use async API style because browser crypto API is async.
