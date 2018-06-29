@@ -20,7 +20,7 @@ function getHmac(key, counterBytes) {
   // Create the byte array
   var b = new Buffer(counterBytes);
 
-  var hmac = crypto.createHmac('sha512', key);
+  var hmac = crypto.createHmac('sha1', key);
 
   // Update the HMAC with the byte array
   var digest = hmac.update(b).digest('hex');

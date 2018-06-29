@@ -12,7 +12,7 @@ async function getHmac(rawKey, counterBytes) {
     {
       // algorithm details
       name: 'HMAC',
-      hash: { name: 'SHA-512' },
+      hash: { name: 'SHA-1' },
     },
     false, // export = false
     ['sign', 'verify'] // what this key can do
