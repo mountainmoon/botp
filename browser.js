@@ -3,12 +3,11 @@
 var lib = require('./lib');
 
 async function getHmac(rawKey, counterBytes) {
-  // encoder to convert string to Uint8Array
-  var enc = new TextEncoder('utf-8');
-
   var key = await window.crypto.subtle.importKey(
     'raw', // raw format of the key - should be Uint8Array
-    enc.encode(rawKey),
+    typeof rawKey === 'string'
+      ? new TextEncoder('utf-8').encode(rawKey)
+      : rawKey,
     {
       // algorithm details
       name: 'HMAC',

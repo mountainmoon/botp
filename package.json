@@ -2,7 +2,7 @@
   "author": "yuekec <yuekec@gmail.com>",
   "name": "iotp",
   "description": "Isomorphic One Time Password library for both node and browser, supports HOTP, TOTP and works with Google Authenticator",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "homepage": "https://github.com/mountainmoon/iotp",
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
     "iotp",
     "isomorphic"
   ],
+  "license": "MIT",
   "main": "index.js",
   "browser": "browser.js",
   "scripts": {
